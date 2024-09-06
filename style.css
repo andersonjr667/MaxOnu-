@@ -1,0 +1,149 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #2b9bbd;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Links lado a lado */
+    justify-content: center; /* Centraliza o menu */
+    gap: 15px; /* Espaçamento entre os itens */
+}
+
+nav ul li {
+    margin: 0; /* Remove margens */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 15px; /* Adiciona espaçamento ao redor dos links */
+    transition: background-color 0.3s ease; /* Animação suave */
+}
+
+nav ul li a:hover {
+    color: #fc9403;
+    background-color: rgba(255, 255, 255, 0.2); /* Destaque ao passar o mouse */
+    border-radius: 5px;
+}
+
+/* Seção Hero */
+.hero {
+    background-color: #fc9403;
+    color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #2b9bbd;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #fc9403;
+}
+
+/* Seção Comitês */
+.comites {
+    background-color: #2b9bbd;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+}
+
+.comite {
+    text-align: center;
+    width: 30%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comite img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.comite h2 {
+    color: #fc9403;
+    margin-top: 15px;
+}
+
+.comite p {
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #2b9bbd;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #fc9403;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    /* Ajustes para telas menores */
+    .comites {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .comite {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .hero {
+        padding: 30px 20px;
+    }
+
+    nav ul {
+        flex-direction: row; /* Mantém os links lado a lado no celular */
+        flex-wrap: wrap; /* Links serão empilhados quando o espaço acabar */
+        justify-content: center; /* Centraliza o menu no celular */
+    }
+
+    nav ul li {
+        margin: 5px; /* Ajusta o espaçamento entre os itens no celular */
+    }
+}
