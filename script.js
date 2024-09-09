@@ -1,45 +1,27 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Menu responsivo
     const menuToggle = document.querySelector('.menu-toggle');
-    const navMenu = document.querySelector('nav ul');
+    const nav = document.querySelector('nav ul');
 
-    if (menuToggle) {
-        menuToggle.addEventListener('click', function() {
-            navMenu.classList.toggle('showing'); // Alterna a exibição do menu
-        });
-    }
+    menuToggle.addEventListener('click', function() {
+        nav.classList.toggle('showing');
+    });
 
-    // Função para rolar suavemente até a seção ao clicar em um link do menu
-    document.querySelectorAll('nav ul li a').forEach(link => {
+    // Smooth scroll para os links de navegação
+    const navLinks = document.querySelectorAll('nav ul li a');
+
+    navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
-            const href = this.getAttribute('href');
-            const section = document.querySelector(href);
-
-            if (section) {
-                section.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }
+            const targetId = e.currentTarget.getAttribute("href");
+            const targetSection = document.querySelector(targetId);
+            targetSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
         });
     });
 
-    // Função para destacar o link ativo no menu com base no scroll
-    const navLinks = document.querySelectorAll('nav ul li a');
-    window.addEventListener('scroll', function() {
-        const sections = document.querySelectorAll('section');
-        let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-
-        sections.forEach(section => {
-            if (scrollPosition >= section.offsetTop - 50 && scrollPosition < section.offsetTop + section.offsetHeight - 50) {
-                let currentId = section.getAttribute('id');
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href') === `#${currentId}`) {
-                        link.classList.add('active');
-                    }
-                });
-            }
-        });
-    });
+    // Adicionar mais funcionalidades aqui
+    // Exemplo: Carrossel de imagens, animações ao rolar a página, etc.
 });
