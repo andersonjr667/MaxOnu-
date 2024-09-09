@@ -64,32 +64,10 @@ nav ul li a:hover {
     text-decoration: none;
     margin-top: 20px;
     border-radius: 5px;
-    transition: background-color 0.3s ease; /* Animação suave */
-    margin: 10px; /* Ajusta o espaçamento entre os botões */
 }
 
 .btn:hover {
     background-color: #fc9403;
-}
-
-/* Estilo específico para botões em lista */
-button, .btn {
-    display: inline-block;
-    background-color: #2b9bbd; /* cor de fundo dos botões */
-    color: white; /* cor do texto */
-    padding: 10px 20px; /* espaço interno dos botões */
-    border: none; /* remover bordas */
-    border-radius: 8px; /* bordas arredondadas */
-    text-align: center; /* centralizar o texto */
-    font-size: 16px; /* tamanho da fonte */
-    margin: 10px; /* espaçamento entre os botões */
-    cursor: pointer; /* cursor de link */
-    text-decoration: none; /* remover sublinhado */
-}
-
-button:hover, .btn:hover {
-    background-color: #fc9403; /* cor de fundo ao passar o mouse */
-    color: white; /* cor do texto ao passar o mouse */
 }
 
 /* Seção Comitês */
@@ -122,6 +100,53 @@ button:hover, .btn:hover {
 
 .comite p {
     color: #666;
+}
+
+/* Seção de delegações */
+.delegacao {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.img-pais {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.info-pais {
+    flex-grow: 1;
+}
+
+.info-pais h3 {
+    color: #fc9403;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.info-pais ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.info-pais ul li {
+    color: #333;
+}
+
+.info-pais .btn {
+    display: inline-block;
+    background-color: #2b9bbd;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.info-pais .btn:hover {
+    background-color: #fc9403;
 }
 
 /* Footer */
@@ -167,5 +192,18 @@ footer a:hover {
 
     nav ul li {
         margin: 5px; /* Ajusta o espaçamento entre os itens no celular */
+    }
+
+    .delegacao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-pais {
+        margin-bottom: 15px;
+    }
+
+    .info-pais {
+        text-align: center;
     }
 }
