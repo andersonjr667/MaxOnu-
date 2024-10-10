@@ -3,70 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comitê Partilha da África - 8º e 9º Ano</title>
+    <title>Delegações - MaxOnu</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body {
             background-color: #fc9403; /* Cor de fundo amarela */
             color: white; /* Cor da fonte branca */
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
         }
 
         header {
-            background-color: #2b9bbd; /* Cor de fundo do cabeçalho */
-            padding: 10px 0;
+            background-color: #2b9bbd; /* Exemplo de cor de fundo do cabeçalho */
         }
 
-        header nav ul {
+        nav ul {
             list-style-type: none;
-            text-align: center;
             padding: 0;
         }
 
-        header nav ul li {
+        nav ul li {
             display: inline;
-            margin-right: 20px;
+            margin-right: 15px;
         }
 
-        header nav ul li a {
-            color: white;
+        nav ul li a {
+            color: white; /* Cor do texto dos links */
             text-decoration: none;
-            font-weight: bold;
         }
 
-        .conteudo-comite {
+        .delegacoes-africa, .delegacoes-russia-ucrania, .delegacoes-direitos-humanos {
             margin: 20px;
         }
 
-        .delegacao-container {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 10px;
+        .btn-container {
+            margin-top: 10px;
         }
 
-        .delegacao-container img {
-            width: 80px;
-            height: auto;
-            margin-right: 20px;
+        .btn {
+            background-color: #2b9bbd; /* Cor do botão */
+            color: white; /* Cor do texto do botão */
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
         }
 
-        .delegacao-info {
-            font-size: 18px;
-        }
-
-        .delegacao-info h3 {
-            margin: 0;
-            font-size: 22px;
-        }
-
-        .delegacao-info p {
-            margin: 5px 0 0;
-            font-size: 16px;
-            color: #ddd; /* Cor da fonte do texto */
+        .btn:hover {
+            background-color: #1a7c99; /* Cor do botão ao passar o mouse */
         }
 
         footer {
@@ -101,150 +82,38 @@
         </nav>
     </header>
 
-    <section class="conteudo-comite">
-        <h2>Comitê Partilha da África - 8º e 9º Ano</h2>
-
-        <!-- Delegação 1 -->
-        <div class="delegacao-container">
-            <img src="imagens/franca.png" alt="Bandeira da França">
-            <div class="delegacao-info">
-                <h3>França</h3>
-                <p>Delegados(as): Laura Coelho Morais e Ana Luiza Silva Monteiro</p>
-            </div>
+    <!-- Delegações - Comitê África -->
+    <section class="delegacoes-africa">
+        <h2>Delegacões Comitê (AGNU 2024) 140 ANOS DA PARTILHA DA ÁFRICA: REFLEXÕES E PERSPECTIVAS</h2>
+        <div class="btn-container">
+            <a href="africa-8e9ano.html" class="btn">Ver 8º e 9º Ano</a>
+            <a href="africa-ensino-medio.html" class="btn">Ver Ensino Médio</a>
         </div>
-
-        <!-- Delegação 2 -->
-        <div class="delegacao-container">
-            <img src="imagens/belgica.png" alt="Bandeira da Bélgica">
-            <div class="delegacao-info">
-                <h3>Bélgica</h3>
-                <p>Delegados(as): Olavo Souza e Guilherme Borges</p>
-            </div>
-        </div>
-
-        <!-- Delegação 3 -->
-        <div class="delegacao-container">
-            <img src="imagens/rdcongo.png" alt="Bandeira da RD Congo">
-            <div class="delegacao-info">
-                <h3>RD Congo</h3>
-                <p>Delegados(as): Cauã Reinaldo Honrato Proença e Gustavo Henrique Souza Dos Santos Chagas</p>
-            </div>
-        </div>
-
-        <!-- Delegação 4 -->
-        <div class="delegacao-container">
-            <img src="imagens/argelia.png" alt="Bandeira da Argélia">
-            <div class="delegacao-info">
-                <h3>Argélia</h3>
-                <p>Delegados(as): Luis Felipe Manzini Costa e Luis Fernando Nunes de Paiva</p>
-            </div>
-        </div>
-
-        <!-- Delegação 5 -->
-        <div class="delegacao-container">
-            <img src="imagens/alemanha.png" alt="Bandeira da Alemanha">
-            <div class="delegacao-info">
-                <h3>Alemanha</h3>
-                <p>Delegados(as): Isabelle Cristina de Oliveira Andrade e Julia Rafaela Vieira Mangerotti</p>
-            </div>
-        </div>
-
-        <!-- Delegação 6 -->
-        <div class="delegacao-container">
-            <img src="imagens/africasul.png" alt="Bandeira da África do Sul">
-            <div class="delegacao-info">
-                <h3>África do Sul</h3>
-                <p>Delegados(as): Heitor Andrade de Lima e Vitor Galdino Scalzo</p>
-            </div>
-        </div>
-
-        <!-- Delegação 7 -->
-        <div class="delegacao-container">
-            <img src="imagens/nigeria.png" alt="Bandeira da Nigéria">
-            <div class="delegacao-info">
-                <h3>Nigéria</h3>
-                <p>Delegados(as): Alice Alacoque Fernandes de Jesus e Letícia Gabrielly</p>
-            </div>
-        </div>
-
-        <!-- Delegação 8 -->
-        <div class="delegacao-container">
-            <img src="imagens/cdh.png" alt="Bandeira do CDH">
-            <div class="delegacao-info">
-                <h3>CDH</h3>
-                <p>Delegados(as): Anna Carla de Souza Rocha e Sofia Costa Machado</p>
-            </div>
-        </div>
-
-        <!-- Delegação 9 -->
-        <div class="delegacao-container">
-            <img src="imagens/reinounido.png" alt="Bandeira do Reino Unido">
-            <div class="delegacao-info">
-                <h3>Reino Unido</h3>
-                <p>Delegados(as): Letícia de Andrade e Izabela Toscano</p>
-            </div>
-        </div>
-
-        <!-- Delegação 10 -->
-        <div class="delegacao-container">
-            <img src="imagens/angola.png" alt="Bandeira de Angola">
-            <div class="delegacao-info">
-                <h3>Angola</h3>
-                <p>Delegados(as): Manuela Rodrigues Dias e Kamilly Matozinhos Belo</p>
-            </div>
-        </div>
-
-        <!-- Delegação 11 -->
-        <div class="delegacao-container">
-            <img src="imagens/egito.png" alt="Bandeira do Egito">
-            <div class="delegacao-info">
-                <h3>Egito</h3>
-                <p>Delegados(as): Davi Reis Castro e Moisés dos Santos Caldeira Brant</p>
-            </div>
-        </div>
-
-        <!-- Delegação 12 -->
-        <div class="delegacao-container">
-            <img src="imagens/india.png" alt="Bandeira da Índia">
-            <div class="delegacao-info">
-                <h3>Índia</h3>
-                <p>Delegados(as): Anna Luisa Valle Moreira Boechat e Sophia Lara Marinho Miranda</p>
-            </div>
-        </div>
-
-        <!-- Delegação 13 -->
-        <div class="delegacao-container">
-            <img src="imagens/eua.png" alt="Bandeira dos EUA">
-            <div class="delegacao-info">
-                <h3>EUA</h3>
-                <p>Delegados(as): Laura Bernardes França e Letícia dos Santos Trindade Teixeira</p>
-            </div>
-        </div>
-
-        <!-- Delegação 14 -->
-        <div class="delegacao-container">
-            <img src="imagens/irlanda.png" alt="Bandeira da Irlanda">
-            <div class="delegacao-info">
-                <h3>Irlanda</h3>
-                <p>Delegados(as): Eduardo César Martins Siqueira e Henrique Mesquita Borçato</p>
-            </div>
-        </div>
-
-        <!-- Delegação 15 -->
-        <div class="delegacao-container">
-            <img src="imagens/russia.png" alt="Bandeira da Rússia">
-            <div class="delegacao-info">
-                <h3>Rússia</h3>
-                <p>Delegados(as): Guilherme Abreu de Lima e Vitor Lopes Ribas de Souza</p>
-            </div>
-        </div>
-
-        <!-- Rodapé -->
-        <footer>
-            <p>Siga-nos no Instagram</p>
-            <p><a href="https://www.instagram.com/maxonu_24
-                   </a></p>
-        </footer>
     </section>
+
+    <!-- Delegações - Comitê Rússia e Ucrânia -->
+    <section class="delegacoes-russia-ucrania">
+        <h2>Delegações Comitê (CSNU 2022) TENSÕES ENTRE RÚSSIA E UCRÂNIA</h2>
+        <div class="btn-container">
+            <a href="delegacoes_tensao_russia_ucrania_8e9ano.html" class="btn">Ver 8º e 9º Ano</a>
+            <a href="russia-ucrania-ensino-medio.html" class="btn">Ver Ensino Médio</a>
+        </div>
+    </section>
+
+    <!-- Delegações - Comitê Direitos Humanos -->
+    <section class="delegacoes-direitos-humanos">
+        <h2>(OEA 2024) AS VIOLAÇÕES DOS DIREITOS HUMANOS DENTRO DO SISTEMA CARCERÁRIO</h2>
+        <div class="btn-container">
+            <a href="delegacoes-direitos-humanos-8e9ano.html" class="btn">Ver 8º e 9º Ano</a>
+            <a href="direitos-humanos-ensino-medio.html" class="btn">Ver Ensino Médio</a>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Siga-nos no Instagram: <a href="https://www.instagram.com/maxonu_24/profilecard/?igsh=eWFqbDBnOG1xaTRh" target="_blank">MaxOnu 2024</a></p>
+        <p>Feito por Imprensa MaxOnu</p>
+    </footer>
+
 </body>
-                   </html>
+</html>
