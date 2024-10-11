@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comitê de Direitos Humanos - 8º e 9º Ano</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Comitê Tensões entre Rússia e Ucrânia - 8º e 9º Ano</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
-            background-color: #fc9403; /* Cor de fundo amarelo */
-            color: white; /* Cor da fonte branca */
             font-family: Arial, sans-serif;
+            background-color: #fc9403; /* Cor de fundo alterada para amarelo */
+            color: white; /* Texto em branco */
+            margin: 0;
+            padding: 0;
         }
 
-        header, footer {
-            background-color: #2b9bbd; /* Cor de fundo azul */
-            color: white; /* Cor da fonte branca */
+        header {
+            background-color: #2b9bbd; /* Alterado para azul */
+            padding: 10px 0;
         }
 
         nav ul {
@@ -30,7 +32,7 @@
         }
 
         nav ul li a {
-            color: white;
+            color: white; /* Fontes em branco */
             text-decoration: none;
             font-weight: bold;
             padding: 10px 20px;
@@ -41,42 +43,65 @@
 
         nav ul li a:hover {
             background-color: white;
-            color: #fc9403; /* Texto amarelo no hover */
+            color: #fc9403; /* Alterado para amarelo no hover */
         }
 
-        h1, h2, h3 {
-            color: white;
-        }
-
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            gap: 20px;
-        }
-
-        .card {
-            background-color: #2b9bbd;
+        .conteudo-comite {
+            max-width: 1200px;
+            margin: 40px auto;
             padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            width: 250px;
-            transition: transform 0.3s;
+            background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            color: white; /* Texto branco */
         }
 
-        .card:hover {
-            transform: scale(1.05);
+        .conteudo-comite h2 {
+            color: white;
+            margin-bottom: 30px;
         }
 
-        .card img {
-            width: 100px;
+        .delegacao-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .delegacao-container img {
+            width: 80px;
             height: auto;
-            margin-bottom: 15px;
+            margin-right: 20px;
+        }
+
+        .delegacao-info {
+            font-size: 18px;
+            color: white; /* Fontes em branco */
+        }
+
+        .delegacao-info h3 {
+            margin: 0;
+            font-size: 22px;
+            color: white; /* Alterado para branco */
+        }
+
+        .delegacao-info p {
+            margin: 5px 0 0;
+            font-size: 16px;
+            color: white; /* Fontes em branco */
         }
 
         footer {
+            background-color: #2b9bbd; /* Alterado para azul */
+            color: white; /* Fontes em branco */
             text-align: center;
             padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -84,176 +109,158 @@
     <header>
         <nav>
             <ul>
-                <li><a href="home.html">Início</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="delegacoes_direitos_humanos_8e9ano.html">Delegações 8º e 9º Ano</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="guias.html">Guias</a></li>
+                <li><a href="delegacoes.html">Delegações</a></li>
+                <li><a href="dpos.html">DPOs</a></li>
+                <li><a href="regras.html">Regras</a></li>
+                <li><a href="perguntas.html">Perguntas Comuns</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <h1>Comitê de Direitos Humanos - 8º e 9º Ano</h1>
+    <section class="conteudo-comite">
+        <h2>Comitê Tensões entre Rússia e Ucrânia - 8º e 9º Ano</h2>
 
-        <div class="container">
-            <div class="card">
-                <img src="imagens/russia_direitos_humanos.png" alt="Rússia">
-                <h3>Rússia</h3>
-                <p>Delegados: Guilherme Abreu de Lima e Vitor Lopes Ribas de Souza</p>
-            </div>
-
-            <div class="card">
-                <img src="imagens/ucrania_direitos_humanos.png" alt="Ucrânia">
-                <h3>Ucrânia</h3>
-                <p>Delegados: Larissa Oliveira Coelho Jacome e Iris dos Santos Silveira</p>
-            </div>
-
-            <div class="card">
-                <img src="imagens/reino_unido_direitos_humanos.png" alt="Reino Unido">
-                <h3>Reino Unido</h3>
-                <p>Delegados: Maria Eduarda Elpidio de Moura e Laura Linarte de Moura</p>
-            </div>
-
-            <div class="card">
-                <img src="imagens/emirados_arabes_unidos_direitos_humanos.png" alt="Emirados Árabes Unidos">
-                <h3>Emirados Árabes Unidos</h3>
-                <p>Delegados: Maria Clara Vieira Drumond Aguiar e Maria Fernanda Almeida Di Latella</p>
-            </div>
-
-            <div class="card">
-                <img src="imagens/acnur_direitos_humanos.png" alt="ACNUR">
-                <h3>ACNUR</h3>
-                <p>Delegados: Davi Favalesa Araújo e Marcelo Cazati Maddad Monteiro</p>
-            </div>
-
-            <div class="card">
-                <img src="imagens/argentina_direitos_humanos.png" alt="Argentina">
-                <h3>Argentina</h3>
-                <p>Delegados: Lucas Urbanin Tavares e Júlia Beatriz Lopes de Carvalho</p>
-            </div>
-
-            <div class="card">
-                <img src="imagens/haiti_direitos_humanos.png" alt="Haiti">
-                <h3>Haiti</h3>
-                <p>Delegados: Guilherme Andrade e Davi Lages</p>
-            </div>
-
-            <div class="card">
-                <img src="imagens/el_salvador_direitos_humanos.png" alt="El Salvador">
-                <h3>El Salvador</h3>
-                <p>Delegados: Maria Luisa Tavares e Yasmin de Matos</p>
-            </div>
-
-            <div class="card">
-                <img src="imagens/honduras_direitos_humanos.png" alt="Honduras">
-                <h3>Honduras</h3>
-                <p>Delegados: Lavinia Andrade Ramos e Julia Bastos Resende Neves</p>
-            </div>
-
-            <div class="card">
-                <img src="imagens/eua_direitos_humanos.png" alt="EUA">
-                <h3>EUA</h3>
-                <p>Delegados: Anelise Santos Cruz e Bruna Souza Sudário França</p>
-            </div>
-
-            <div class="card">
-                <img src="imagens/nicaragua_direitos_humanos.png" alt="Nicarágua">
-                <h3>Nicarágua</h3>
-                <p>Delegados: Luiza Soares de Freitas Teixeira e Beatriz Martins Lima</p>
-            </div>
-
-            <div class="card">
-                <img src="imagens/unodc_direitos_humanos.png" alt="UNODC">
-                <h3>UNODC</h3>
-                <p>Delegados: Lavinia Fonseca Umbelino e Cecília Farinelli Braga</p>
-            </div>
-
-            <div class="card">
-                <img src="imagens/brasil_direitos_humanos.png" alt="Brasil">
-                <h3>Brasil</h3>
-                <p>Delegados: Marcelly Araújo Rocha e Maria Eduarda Correia Bragança</p>
-            </div>
-
-            <div class="card">
-                <img src="imagens/bolivia_direitos_humanos.png" alt="Bolívia">
-                <h3>Bolívia</h3>
-                <p>Delegados: Luiza Figueredo Paes Ferreira e Caroline Vitória Gonçalves Menezes</p>
-            </div>
-
-            <div class="card">
-                <img src="imagens/venezuela_direitos_humanos.png" alt="Venezuela">
-                <h3>Venezuela</h3>
-                <p>Delegados: Miguel Souza Evangelista e Théo Alves Novella</p>
-            </div>
-
-            <div class="card">
-                <img src="imagens/aclu_direitos_humanos.png" alt="ACLU">
-                <h3>ACLU</h3>
-                <p>Delegados: Mariana Colares de Queiroz Neto e Maria Fernanda Ferreira Souza</p>
-            </div>
-
-            <div class="card">
-                <img src="imagens/colombia_direitos_humanos.png" alt="Colômbia">
-                <h3>Colômbia</h3>
-                <p>Delegados: Daniel Azer Rezende Cunha e Heitor Eugênio Bossler Motta</p>
-            </div>
-
-            <div class="card">
-                <img src="imagens/peru_direitos_humanos.png" alt="Peru">
-                <h3>Peru</h3>
-                <p>Delegados: Beatriz Louzada Barbosa e Maria Clara Mendes Conrado</p>
-            </div>
-
-            <div class="card">
-                <img src="imagens/onu_mulheres_direitos_humanos.png" alt="ONU Mulheres">
-                <h3>ONU Mulheres</h3>
-                <p>Delegados: Mateus Camargos Baroni e Matheus Camargos Baroni</p>
-            </div>
-
-            <div class="card">
-                <img src="imagens/chile_direitos_humanos.png" alt="Chile">
-                <h3>Chile</h3>
-                <p>Delegados: Rafael Santana Lacerda e Caio César Paiva de Oliveira</p>
-            <div class="card">
-                <img src="imagens/mexico_direitos_humanos.png" alt="México">
-                <h3>México</h3>
-                <p>Delegados: João Pedro Santos Medeiros e Gabriel Alvarenga Gonçalves</p>
-            </div>
-
-            <div class="card">
-                <img src="imagens/franca_direitos_humanos.png" alt="França">
-                <h3>França</h3>
-                <p>Delegados: Isabella Oliveira Correia e Pedro Souza Barros</p>
-            </div>
-
-            <div class="card">
-                <img src="imagens/canada_direitos_humanos.png" alt="Canadá">
-                <h3>Canadá</h3>
-                <p>Delegados: Thales Rodrigues Lopes e Valentina Silva Santos</p>
-            </div>
-
-            <div class="card">
-                <img src="imagens/japao_direitos_humanos.png" alt="Japão">
-                <h3>Japão</h3>
-                <p>Delegados: Renata Lima Nogueira e Felipe Campos Oliveira</p>
-            </div>
-
-            <div class="card">
-                <img src="imagens/australia_direitos_humanos.png" alt="Austrália">
-                <h3>Austrália</h3>
-                <p>Delegados: Caio Oliveira Santos e Fernanda Lopes Ribeiro</p>
-            </div>
-
-            <div class="card">
-                <img src="imagens/italia_direitos_humanos.png" alt="Itália">
-                <h3>Itália</h3>
-                <p>Delegados: Luana Almeida Santos e Lucas Henrique Lopes</p>
+        <!-- Delegação 1 -->
+        <div class="delegacao-container">
+            <img src="imagens/egito_tensao.png" alt="Bandeira do Egito">
+            <div class="delegacao-info">
+                <h3>Egito</h3>
+                <p>Dupla: Davi Reis Castro e Moisés dos Santos Caldeira Brant</p>
             </div>
         </div>
-    </main>
+
+        <!-- Delegação 2 -->
+        <div class="delegacao-container">
+            <img src="imagens/india_tensao.png" alt="Bandeira da Índia">
+            <div class="delegacao-info">
+                <h3>Índia</h3>
+                <p>Dupla: Anna Luisa Valle Moreira Boechat e Sophia Lara Marinho Miranda</p>
+            </div>
+        </div>
+
+        <!-- Delegação 3 -->
+        <div class="delegacao-container">
+            <img src="imagens/eua_tensao.png" alt="Bandeira dos EUA">
+            <div class="delegacao-info">
+                <h3>EUA</h3>
+                <p>Dupla: Laura Bernardes França e Letícia dos Santos Trindade Teixeira</p>
+            </div>
+        </div>
+
+        <!-- Delegação 4 -->
+        <div class="delegacao-container">
+            <img src="imagens/irlanda_tensao.png" alt="Bandeira da Irlanda">
+            <div class="delegacao-info">
+                <h3>Irlanda</h3>
+                <p>Dupla: Eduardo César Martins Siqueira e Henrique Mesquita Borçato</p>
+            </div>
+        </div>
+
+        <!-- Delegação 5 -->
+        <div class="delegacao-container">
+            <img src="imagens/russia_tensao.png" alt="Bandeira da Rússia">
+            <div class="delegacao-info">
+                <h3>Rússia</h3>
+                <p>Dupla: Guilherme Abreu de Lima e Vitor Lopes Ribas de Souza</p>
+            </div>
+        </div>
+
+        <!-- Delegação 6 -->
+        <div class="delegacao-container">
+            <img src="imagens/franca_tensao.png" alt="Bandeira da França">
+            <div class="delegacao-info">
+                <h3>França</h>
+                <p>Dupla: Marina Vieira Drumond Aguiar e Maria Augusta Neves Chagas</p>
+            </div>
+        </div>
+
+        <!-- Delegação 7 -->
+        <div class="delegacao-container">
+            <img src="imagens/ucrania_tensao.png" alt="Bandeira da Ucrânia">
+            <div class="delegacao-info">
+                <h3>Ucrânia</h3>
+                <p>Dupla: Larissa Oliveira Coelho Jacome e Iris dos Santos Silveira</p>
+            </div>
+        </div>
+
+        <!-- Delegação 8 -->
+        <div class="delegacao-container">
+            <img src="imagens/mexico_tensao.png" alt="Bandeira do México">
+            <div class="delegacao-info">
+                <h3>México</h3>
+                <p>Dupla: Letícia Maria Mello Bussolotti e Julia de Lemos Almeida Cardoso</p>
+            </div>
+        </div>
+
+        <!-- Delegação 9 -->
+        <div class="delegacao-container">
+            <img src="imagens/noruega_tensao.png" alt="Bandeira da Noruega">
+            <div class="delegacao-info">
+                <h3>Noruega</h3>
+                <p>Dupla: Fábio Rodrigues e Ian Carvalho</p>
+            </div>
+        </div>
+
+        <!-- Delegação 10 -->
+        <div class="delegacao-container">
+            <img src="imagens/gabao_tensao.png" alt="Bandeira do Gabão">
+            <div class="delegacao-info">
+                <h3>Gabão</h3>
+                <p>Dupla: Guilherme Prosdocimi Pimentel e Pedro Modesto Carvalho</p>
+            </div>
+        </div>
+
+        <!-- Delegação 11 -->
+        <div class="delegacao-container">
+            <img src="imagens/quenia_tensao.png" alt="Bandeira do Quênia">
+            <div class="delegacao-info">
+                <h3>Quênia</h3>
+                <p>Dupla: Maria Eduarda Gonçalves Ramos e Rafaela Belizário Araújo e Maria Luiza Diniz</p>
+            </div>
+        </div>
+
+        <!-- Delegação 12 -->
+        <div class="delegacao-container">
+            <img src="imagens/albania_tensao.png" alt="Bandeira da Albânia">
+            <div class="delegacao-info">
+                <h3>Albânia</h3>
+                <p>Dupla: João Antônio Moura e Pedro Augusto Guimarães</p>
+            </div>
+        </div>
+
+        <!-- Delegação 13 -->
+        <div class="delegacao-container">
+            <img src="imagens/brasil_tensao.png" alt="Bandeira do Brasil">
+            <div class="delegacao-info">
+                <h3>Brasil</h3>
+                <p>Dupla: Lucas Vieira de Lima e João Paulo Lima Braga</p>
+            </div>
+        </div>
+
+        <!-- Delegação 14 -->
+        <div class="delegacao-container">
+            <img src="imagens/canada_tensao.png" alt="Bandeira do Canadá">
+            <div class="delegacao-info">
+                <h3>Canadá</h3>
+                <p>Dupla: Gabriela Almeida Araújo e Isabella Miranda Silveira</p>
+            </div>
+        </div>
+
+        <!-- Delegação 15 -->
+        <div class="delegacao-container">
+            <img src="imagens/alemanha_tensao.png" alt="Bandeira da Alemanha">
+            <div class="delegacao-info">
+                <h3>Alemanha</h3>
+                <p>Dupla: Julia Silva Ferreira e Patrícia Martins Souza</p>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2024 Comitê de Direitos Humanos - Todos os direitos reservados</p>
+        <p>&copy; 2024 Comitê Tensões entre Rússia e Ucrânia - 8º e 9º Ano. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
