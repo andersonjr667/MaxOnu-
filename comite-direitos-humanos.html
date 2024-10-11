@@ -7,7 +7,57 @@
     <link rel="stylesheet" href="style.css">
     <style>
         body {
-            background-color: #fc9403; /* Cor de fundo amarela */
+            font-family: Arial, sans-serif;
+            background-color: #fc9403;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2b9bbd;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: transparent;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: white;
+            color: #fc9403;
+        }
+
+        .conteudo-comite {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+
+        .conteudo-comite h2 {
+            color: white;
+            margin-bottom: 30px;
         }
 
         .delegacao-container {
@@ -26,17 +76,32 @@
 
         .delegacao-info {
             font-size: 18px;
+            color: white;
         }
 
         .delegacao-info h3 {
             margin: 0;
             font-size: 22px;
+            color: white;
         }
 
         .delegacao-info p {
             margin: 5px 0 0;
             font-size: 16px;
-            color: #555;
+            color: white;
+        }
+
+        footer {
+            background-color: #2b9bbd;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -60,168 +125,124 @@
 
         <!-- Delegação 1 -->
         <div class="delegacao-container">
-            <img src="imagens/franca.png" alt="Bandeira da França">
+            <img src="afeganistao.png" alt="Bandeira do Afeganistão">
             <div class="delegacao-info">
-                <h3>França</h3>
-                <p>Dupla: Laura Coelho Morais e Ana Luiza Silva Monteiro</p>
+                <h3>Afeganistão</h3>
+                <p>Dupla: João Carlos Dias e Maria Clara Souza</p>
             </div>
         </div>
 
         <!-- Delegação 2 -->
         <div class="delegacao-container">
-            <img src="imagens/belgica.png" alt="Bandeira da Bélgica">
+            <img src="argentina.png" alt="Bandeira da Argentina">
             <div class="delegacao-info">
-                <h3>Bélgica</h3>
-                <p>Dupla: Olavo Souza e Guilherme Borges</p>
+                <h3>Argentina</h3>
+                <p>Dupla: Felipe Silva e Gabriela Nunes</p>
             </div>
         </div>
 
         <!-- Delegação 3 -->
         <div class="delegacao-container">
-            <img src="imagens/rdcongo.png" alt="Bandeira da RD Congo">
+            <img src="australia.png" alt="Bandeira da Austrália">
             <div class="delegacao-info">
-                <h3>RD Congo</h3>
-                <p>Dupla: Cauã Reinaldo Honrato Proença e Gustavo Henrique Souza Dos Santos Chagas</p>
+                <h3>Austrália</h3>
+                <p>Dupla: Rafael dos Santos e Paula Almeida</p>
             </div>
         </div>
 
         <!-- Delegação 4 -->
         <div class="delegacao-container">
-            <img src="imagens/argelia.png" alt="Bandeira da Argélia">
+            <img src="china.png" alt="Bandeira da China">
             <div class="delegacao-info">
-                <h3>Argélia</h3>
-                <p>Dupla: Luis Felipe Manzini Costa e Luis Fernando Nunes de Paiva</p>
+                <h3>China</h3>
+                <p>Dupla: Renata Borges e Júlio Costa</p>
             </div>
         </div>
 
         <!-- Delegação 5 -->
         <div class="delegacao-container">
-            <img src="imagens/alemanha.png" alt="Bandeira da Alemanha">
+            <img src="dinamarca.png" alt="Bandeira da Dinamarca">
             <div class="delegacao-info">
-                <h3>Alemanha</h3>
-                <p>Dupla: Isabelle Cristina de Oliveira Andrade e Julia Rafaela Vieira Mangerotti</p>
+                <h3>Dinamarca</h3>
+                <p>Dupla: Beatriz Ferreira e Rodrigo Oliveira</p>
             </div>
         </div>
 
         <!-- Delegação 6 -->
         <div class="delegacao-container">
-            <img src="imagens/africasul.png" alt="Bandeira da África do Sul">
+            <img src="egito.png" alt="Bandeira do Egito">
             <div class="delegacao-info">
-                <h3>África do Sul</h3>
-                <p>Dupla: Heitor Andrade de Lima e Vitor Galdino Scalzo</p>
+                <h3>Egito</h3>
+                <p>Dupla: Larissa Coelho e Pedro Martins</p>
             </div>
         </div>
 
         <!-- Delegação 7 -->
         <div class="delegacao-container">
-            <img src="imagens/nigeria.png" alt="Bandeira da Nigéria">
+            <img src="franca.png" alt="Bandeira da França">
             <div class="delegacao-info">
-                <h3>Nigéria</h3>
-                <p>Dupla: Alice Alacoque Fernandes de Jesus e Letícia Gabrielly</p>
+                <h3>França</h3>
+                <p>Dupla: Ana Luisa Moreira e Lucas Mendes</p>
             </div>
         </div>
 
         <!-- Delegação 8 -->
         <div class="delegacao-container">
-            <img src="imagens/cdh.png" alt="Bandeira do CDH">
+            <img src="holanda.png" alt="Bandeira da Holanda">
             <div class="delegacao-info">
-                <h3>CDH</h3>
-                <p>Dupla: Anna Carla de Souza Rocha e Sofia Costa Machado</p>
+                <h3>Holanda</h3>
+                <p>Dupla: Thiago Lima e Mariana Gonçalves</p>
             </div>
         </div>
 
         <!-- Delegação 9 -->
         <div class="delegacao-container">
-            <img src="imagens/reinounido.png" alt="Bandeira do Reino Unido">
+            <img src="mexico.png" alt="Bandeira do México">
             <div class="delegacao-info">
-                <h3>Reino Unido</h3>
-                <p>Dupla: Letícia de Andrade e Izabela Toscano</p>
+                <h3>México</h3>
+                <p>Dupla: Vinicius Souza e Laura Trindade</p>
             </div>
         </div>
 
         <!-- Delegação 10 -->
         <div class="delegacao-container">
-            <img src="imagens/angola.png" alt="Bandeira de Angola">
+            <img src="russia.png" alt="Bandeira da Rússia">
             <div class="delegacao-info">
-                <h3>Angola</h3>
-                <p>Dupla: Manuela Rodrigues Dias e Kamilly Matozinhos Belo</p>
+                <h3>Rússia</h3>
+                <p>Dupla: Bruna Alves e Matheus Ferreira</p>
             </div>
         </div>
 
         <!-- Delegação 11 -->
         <div class="delegacao-container">
-            <img src="imagens/egito.png" alt="Bandeira do Egito">
+            <img src="ucrania.png" alt="Bandeira da Ucrânia">
             <div class="delegacao-info">
-                <h3>Egito</h3>
-                <p>Dupla: Davi Reis Castro e Moisés dos Santos Caldeira Brant</p>
+                <h3>Ucrânia</h3>
+                <p>Dupla: Fábio Araújo e Sofia Oliveira</p>
             </div>
         </div>
 
         <!-- Delegação 12 -->
         <div class="delegacao-container">
-            <img src="imagens/india.png" alt="Bandeira da Índia">
+            <img src="albania.png" alt="Bandeira da Albânia">
             <div class="delegacao-info">
-                <h3>Índia</h3>
-                <p>Dupla: Anna Luisa Valle Moreira Boechat e Sophia Lara Marinho Miranda</p>
+                <h3>Albânia</h3>
+                <p>Dupla: Henrique Silva e João Nunes</p>
             </div>
         </div>
 
         <!-- Delegação 13 -->
         <div class="delegacao-container">
-            <img src="imagens/eua.png" alt="Bandeira dos EUA">
+            <img src="brasil.png" alt="Bandeira do Brasil">
             <div class="delegacao-info">
-                <h3>EUA</h3>
-                <p>Dupla: Laura Bernardes França e Letícia dos Santos Trindade Teixeira</p>
+                <h3>Brasil</h3>
+                <p>Dupla: Guilherme Pereira e Lucas Rocha</p>
             </div>
         </div>
-
-        <!-- Delegação 14 -->
-        <div class="delegacao-container">
-            <img src="imagens/irlanda.png" alt="Bandeira da Irlanda">
-            <div class="delegacao-info">
-                <h3>Irlanda</h3>
-                <p>Dupla: Eduardo César Martins Siqueira e Henrique Mesquita Borçato</p>
-            </div>
-        </div>
-
-        <!-- Delegação 15 -->
-        <div class="delegacao-container">
-            <img src="imagens/russia.png" alt="Bandeira da Rússia">
-            <div class="delegacao-info">
-                <h3>Rússia</h3>
-                <p>Dupla: Guilherme Abreu de Lima e Vitor Lopes Ribas de Souza</p>
-            </div>
-        </div>
-
-        <!-- Delegação 16 -->
-        <div class="delegacao-container">
-            <img src="imagens/franca.png" alt="Bandeira da França">
-            <div class="delegacao-info">
-                <h3>França</h3>
-                <p>Dupla: Marina Vieira Drumond Aguiar e Maria Augusta Neves Chagas</p>
-            </div>
-        </div>
-
-        <!-- Delegação 17 -->
-        <div class="delegacao-container">
-            <img src="imagens/ucrania.png" alt="Bandeira da Ucrânia">
-            <div class="delegacao-info">
-                <h3>Ucrânia</h3>
-                <p>Dupla: Larissa Oliveira Coelho Jacome e Iris dos Santos Silveira</p>
-            </div>
-        </div>
-
-        <!-- Delegação 18 -->
-        <div class="delegacao-container">
-            <img src="imagens/mexico.png" alt="Bandeira do México">
-            <div class="delegacao-info">
-                <h3>México</h3>
-                <p>Dupla: Letícia Maria Mello Bussolotti e Julia de Lemos Almeida Cardoso</p>
-            </div>
-        </div>
-
     </section>
-</
-    </section>
+
+    <footer>
+        <p>Comitê Direitos Humanos - 8º e 9º Ano &copy; 2024</p>
+    </footer>
 </body>
 </html>
