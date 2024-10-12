@@ -46,22 +46,32 @@
             color: #fc9403;
         }
 
-        .hero {
-            text-align: center;
+        .conteudo-comite {
+            max-width: 1200px;
+            margin: 40px auto;
             padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+
+        .conteudo-comite h2 {
+            margin-bottom: 30px;
         }
 
         .delegacao-container {
-            max-width: 800px;
-            margin: 20px auto;
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         .delegacao-info {
-            margin-bottom: 20px;
+            font-size: 18px;
+            flex: 1;
         }
 
         .delegacao-info h3 {
@@ -76,14 +86,12 @@
         }
 
         .btn-view {
-            display: inline-block;
             background-color: #2b9bbd;
             color: white;
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s ease;
-            margin-top: 10px;
         }
 
         .btn-view:hover {
@@ -140,117 +148,168 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <h1>DPOs - Tensões entre Rússia e Ucrânia (8º e 9º Ano)</h1>
-        <p>Encontre abaixo os documentos dos países representados no comitê de Tensões entre Rússia e Ucrânia.</p>
-    </section>
+    <section class="conteudo-comite">
+        <h2>DPOs - Tensões entre Rússia e Ucrânia (8º e 9º Ano)</h2>
 
-    <section class="delegacao-container">
-        <div class="delegacao-info">
-            <h3>Índia</h3>
-            <p>Delegados(as): Eduardo César Martins Siqueira e Henrique Mesquita Borçato</p>
+        <!-- Delegação 1 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>Índia</h3>
+                <p>Delegados(as): Eduardo César Martins Siqueira e Henrique Mesquita Borçato</p>
+            </div>
             <a href="#" class="btn-view" data-img="DPO_India.png">Ver DPO Índia</a>
         </div>
 
-        <div class="delegacao-info">
-            <h3>EUA</h3>
-            <p>Delegados(as): Guilherme Abreu de Lima e Vitor Lopes Ribas de Souza</p>
+        <!-- Delegação 2 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>EUA</h3>
+                <p>Delegados(as): Guilherme Abreu de Lima e Vitor Lopes Ribas de Souza</p>
+            </div>
             <a href="#" class="btn-view" data-img="DPO_EUA.png">Ver DPO EUA</a>
         </div>
 
-        <div class="delegacao-info">
-            <h3>Irlanda</h3>
-            <p>Delegados(as): Marina Vieira Drumond Aguiar e Maria Augusta Neves Chagas</p>
+        <!-- Delegação 3 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>Irlanda</h3>
+                <p>Delegados(as): Marina Vieira Drumond Aguiar e Maria Augusta Neves Chagas</p>
+            </div>
             <a href="#" class="btn-view" data-img="DPO_Irlanda.png">Ver DPO Irlanda</a>
         </div>
 
-        <div class="delegacao-info">
-            <h3>Rússia</h3>
-            <p>Delegados(as): Larissa Oliveira Coelho Jacome e Iris dos Santos Silveira</p>
+        <!-- Delegação 4 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>Rússia</h3>
+                <p>Delegados(as): Larissa Oliveira Coelho Jacome e Iris dos Santos Silveira</p>
+            </div>
             <a href="#" class="btn-view" data-img="DPO_Russia.png">Ver DPO Rússia</a>
         </div>
 
-        <div class="delegacao-info">
-            <h3>França</h3>
-            <p>Delegados(as): Letícia Maria Mello Bussolotti e Julia de Lemos Almeida Cardoso</p>
+        <!-- Delegação 5 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>França</h3>
+                <p>Delegados(as): Letícia Maria Mello Bussolotti e Julia de Lemos Almeida Cardoso</p>
+            </div>
             <a href="#" class="btn-view" data-img="DPO_Franca.png">Ver DPO França</a>
         </div>
 
-        <div class="delegacao-info">
-            <h3>Ucrânia</h3>
-            <p>Delegados(as): Fábio Rodrigues e Ian Carvalho</p>
+        <!-- Delegação 6 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>Ucrânia</h3>
+                <p>Delegados(as): Fábio Rodrigues e Ian Carvalho</p>
+            </div>
             <a href="#" class="btn-view" data-img="DPO_Ucrania.png">Ver DPO Ucrânia</a>
         </div>
 
-        <div class="delegacao-info">
-            <h3>México</h3>
-            <p>Delegados(as): Guilherme Prosdocimi Pimentel e Pedro Modesto Carvalho</p>
+        <!-- Delegação 7 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>México</h3>
+                <p>Delegados(as): Guilherme Prosdocimi Pimentel e Pedro Modesto Carvalho</p>
+            </div>
             <a href="#" class="btn-view" data-img="DPO_Mexico.png">Ver DPO México</a>
         </div>
 
-        <div class="delegacao-info">
-            <h3>Noruega</h3>
-            <p>Delegados(as): Maria Eduarda Gonçalves Ramos e Rafaela Belizário Araújo</p>
+        <!-- Delegação 8 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>Noruega</h3>
+                <p>Delegados(as): Maria Eduarda Gonçalves Ramos e Rafaela Belizário Araújo</p>
+            </div>
             <a href="#" class="btn-view" data-img="DPO_Noruega.png">Ver DPO Noruega</a>
         </div>
 
-        <div class="delegacao-info">
-            <h3>Gabão</h3>
-            <p>Delegados(as): João Antônio Moura e Pedro Augusto Guimarães</p>
+        <!-- Delegação 9 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>Gabão</h3>
+                <p>Delegados(as): João Antônio Moura e Pedro Augusto Guimarães</p>
+            </div>
             <a href="#" class="btn-view" data-img="DPO_Gabao.png">Ver DPO Gabão</a>
         </div>
 
-        <div class="delegacao-info">
-            <h3>Quênia</h3>
-            <p>Delegados(as): Iwyn Perdigão Barbosa de Senna Jeronymo e Daniel Gomides Figueredo</p>
+        <!-- Delegação 10 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>Quênia</h3>
+                <p>Delegados(as): Iwyn Perdigão Barbosa de Senna Jeronymo e Daniel Gomides Figueredo</p>
+            </div>
             <a href="#" class="btn-view" data-img="DPO_Quenia.png">Ver DPO Quênia</a>
         </div>
 
-        <div class="delegacao-info">
-            <h3>Albânia</h3>
-            <p>Delegados(as): Bernardo Oliveira Santos e Miguel Capistrano Borges Régis</p>
+        <!-- Delegação 11 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>Albânia</h3>
+                <p>Delegados(as): Bernardo Oliveira Santos e Miguel Capistrano Borges Régis</p>
+            </div>
             <a href="#" class="btn-view" data-img="DPO_Albania.png">Ver DPO Albânia</a>
         </div>
 
-        <div class="delegacao-info">
-            <h3>Brasil</h3>
-            <p>Delegados(as): Raphael Gabriel Marroni</p>
+        <!-- Delegação 12 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>Brasil</h3>
+                <p>Delegados(as): Raphael Gabriel Marroni</p>
+            </div>
             <a href="#" class="btn-view" data-img="DPO_Brasil.png">Ver DPO Brasil</a>
         </div>
 
-        <div class="delegacao-info">
-            <h3>China</h3>
-            <p>Delegados(as): Gabriel Soares do Bom Conselho e Guilherme Reis</p>
+        <!-- Delegação 13 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>China</h3>
+                <p>Delegados(as): Gabriel Soares do Bom Conselho e Guilherme Reis</p>
+            </div>
             <a href="#" class="btn-view" data-img="DPO_China.png">Ver DPO China</a>
         </div>
 
-        <div class="delegacao-info">
-            <h3>OTAN</h3>
-            <p>Delegados(as): Maria Eduarda Elpidio de Moura e Laura Linarte de Moura</p>
+        <!-- Delegação 14 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>OTAN</h3>
+                <p>Delegados(as): Maria Eduarda Elpidio de Moura e Laura Linarte de Moura</p>
+            </div>
             <a href="#" class="btn-view" data-img="DPO_OTAN.png">Ver DPO OTAN</a>
         </div>
 
-        <div class="delegacao-info">
-            <h3>Gana</h3>
-            <p>Delegados(as): Maria Clara Vieira Drumond Aguiar e Maria Fernanda Almeida Di Latella</p>
+        <!-- Delegação 15 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>Gana</h3>
+                <p>Delegados(as): Maria Clara Vieira Drumond Aguiar e Maria Fernanda Almeida Di Latella</p>
+            </div>
             <a href="#" class="btn-view" data-img="DPO_Gana.png">Ver DPO Gana</a>
         </div>
 
-        <div class="delegacao-info">
-            <h3>Reino Unido</h3>
-            <p>Delegados(as): Davi Favalessa Araújo e Marcelo Cazati Maddad Monteiro</p>
+        <!-- Delegação 16 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>Reino Unido</h3>
+                <p>Delegados(as): Davi Favalessa Araújo e Marcelo Cazati Maddad Monteiro</p>
+            </div>
             <a href="#" class="btn-view" data-img="DPO_Reino_Unido.png">Ver DPO Reino Unido</a>
         </div>
 
-        <div class="delegacao-info">
-            <h3>Emirados Árabes Unidos</h3>
-            <p>Delegados(as): Lucas Urbanin Tavares e Júlia Beatriz Lopes de Carvalho</p>
+        <!-- Delegação 17 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>Emirados Árabes Unidos</h3>
+                <p>Delegados(as): Lucas Urbanin Tavares e Júlia Beatriz Lopes de Carvalho</p>
+            </div>
             <a href="#" class="btn-view" data-img="DPO_Emirados_Arabes.png">Ver DPO Emirados Árabes Unidos</a>
         </div>
 
-        <div class="delegacao-info">
-            <h3>ACNUR</h3>
-            <p>Delegados(as): Guilherme Andrade e Davi Lages</p>
+        <!-- Delegação 18 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>ACNUR</h3>
+                <p>Delegados(as): Guilherme Andrade e Davi Lages</p>
+            </div>
             <a href="#" class="btn-view" data-img="DPO_ACNUR.png">Ver DPO ACNUR</a>
         </div>
     </section>
