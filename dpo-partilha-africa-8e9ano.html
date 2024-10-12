@@ -1,1 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DPOs - Partilha da África (8º e 9º Ano)</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fc9403;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2b9bbd;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: transparent;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: white;
+            color: #fc9403;
+        }
+
+        .conteudo-comite {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+
+        .conteudo-comite h2 {
+            margin-bottom: 30px;
+        }
+
+        .delegacao-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .delegacao-info {
+            font-size: 18px;
+            flex: 1;
+        }
+
+        .delegacao-info h3 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        .delegacao-info p {
+            margin: 5px 0 0;
+            font-size: 16px;
+            color: #ddd;
+        }
+
+        .btn-view {
+            background-color: #2b9bbd;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-view:hover {
+            background-color: white;
+            color: #2b9bbd;
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal-content {
+            display: block;
+            margin: 100px auto;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        .modal-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 40px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="delegacoes.html">Delegações</a></li>
+                <li><a href="dpos.html">DPOs</a></li>
+                <li><a href="regras.html">Regras</a></li>
+                <li><a href="perguntas.html">Perguntas Comuns</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="conteudo-comite">
+        <h2>DPOs - Partilha da África (8º e 9º Ano)</h2>
+
+        <!-- Delegação 1 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>França</h3>
+                <p>Delegados(as): Laura Coelho Morais e Ana Luiza Silva Monteiro</p>
+            </div>
+            <a href="#" class="btn-view" data-img="DPO_Franca.png">Ver DPO França</a>
+        </div>
+
+        <!-- Delegação 2 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>Bélgica</h3>
+                <p>Delegados(as): Olavo Souza e Guilherme Borges</p>
+            </div>
+            <a href="#" class="btn-view" data-img="DPO_Belgica.png">Ver DPO Bélgica</a>
+        </div>
+
+        <!-- Delegação 3 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>RD Congo</h3>
+                <p>Delegados(as): Cauã Reinaldo Honrato Proença e Gustavo Henrique Souza dos Santos Chagas</p>
+            </div>
+            <a href="#" class="btn-view" data-img="DPO_RD_Congo.png">Ver DPO RD Congo</a>
+        </div>
+
+        <!-- Continue with other countries... -->
+
+    </section>
+
+    <!-- Modal for displaying images -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img id="modal-img" src="" alt="DPO Image">
+        </div>
+    </div>
+
+    <footer style="background-color: #2b9bbd; padding: 20px; color: white; text-align: center;">
+        <p>Siga-nos no <a href="https://www.instagram.com" style="color: #fc9403;">Instagram</a></p>
+        <p>MaxOnu 2024 - Feito por Imprensa MaxOnu</p>
+    </footer>
+
+    <script>
+        // Get modal element
+        var modal = document.getElementById('modal');
+        var modalImg = document.getElementById('modal-img');
+        var closeBtn = document.getElementsByClassName('close')[0];
+
+        // Add event listener to each button
+        document.querySelectorAll('.btn-view').forEach(function(btn) {
+            btn.addEventListener('click', function(event) {
+                event.preventDefault();
+                var imgSrc = event.target.getAttribute('data-img');
+                modalImg.src = imgSrc;
+                modal.style.display = 'block';
+            });
+        });
+
+        // Close modal
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+        // Close modal when clicking outside the image
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
 
