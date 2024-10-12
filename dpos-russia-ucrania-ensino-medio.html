@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DPOs - Tensões entre Rússia e Ucrânia (Ensino Médio)</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fc9403;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2b9bbd;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: transparent;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: white;
+            color: #fc9403;
+        }
+
+        .conteudo-comite {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            color: white;
+        }
+
+        .conteudo-comite h2 {
+            margin-bottom: 30px;
+        }
+
+        .delegacao-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .delegacao-info {
+            font-size: 18px;
+            flex: 1;
+        }
+
+        .delegacao-info h3 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        .delegacao-info p {
+            margin: 5px 0 0;
+            font-size: 16px;
+            color: #ddd;
+        }
+
+        .btn-view {
+            background-color: #2b9bbd;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-view:hover {
+            background-color: white;
+            color: #2b9bbd;
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .modal-content {
+            display: block;
+            margin: 100px auto;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        .modal-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 40px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="delegacoes.html">Delegações</a></li>
+                <li><a href="dpos.html">DPOs</a></li>
+                <li><a href="regras.html">Regras</a></li>
+                <li><a href="perguntas.html">Perguntas Comuns</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="conteudo-comite">
+        <h2>DPOs - Tensões entre Rússia e Ucrânia (Ensino Médio)</h2>
+
+        <!-- Delegação 1 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>ACNUR</h3>
+                <p>Delegados(as): João Vitor Bispo e Pedro David Vieira</p>
+            </div>
+            <a href="#" class="btn-view" data-img="DPO_ACNUR.png">Ver DPO ACNUR</a>
+        </div>
+
+        <!-- Delegação 2 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>OTAN</h3>
+                <p>Delegados(as): Miguel de Assis Santos Cruz e Augusto Araujo Cerdeira</p>
+            </div>
+            <a href="#" class="btn-view" data-img="DPO_OTAN.png">Ver DPO OTAN</a>
+        </div>
+
+        <!-- Delegação 3 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>Ucrânia</h3>
+                <p>Delegados(as): Sophia Noah de Almeida Mendes Campanha e Daniella Leny Rodrigues</p>
+            </div>
+            <a href="#" class="btn-view" data-img="DPO_Ucrania.png">Ver DPO Ucrânia</a>
+        </div>
+
+        <!-- Delegação 4 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>Noruega</h3>
+                <p>Delegados(as): Igor Tiago Nogueira Duarte e Arthur da Silva Santos</p>
+            </div>
+            <a href="#" class="btn-view" data-img="DPO_Noruega.png">Ver DPO Noruega</a>
+        </div>
+
+        <!-- Delegação 5 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>França</h3>
+                <p>Delegados(as): João Victor Gomes de Oliveira, João Pedro Costa Archanjo e Rafael Antônio</p>
+            </div>
+            <a href="#" class="btn-view" data-img="DPO_Franca.png">Ver DPO França</a>
+        </div>
+
+        <!-- Delegação 6 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>Rússia</h3>
+                <p>Delegados(as): Ricardo Júnio Bernardino Rocha e Umberto Veneroso Neto</p>
+            </div>
+            <a href="#" class="btn-view" data-img="DPO_Russia.png">Ver DPO Rússia</a>
+        </div>
+
+        <!-- Delegação 7 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>Brasil</h3>
+                <p>Delegados(as): Gabriela Ávila Zanetti e Laura Almeida Campolina</p>
+            </div>
+            <a href="#" class="btn-view" data-img="DPO_Brasil.png">Ver DPO Brasil</a>
+        </div>
+
+        <!-- Delegação 8 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>Reino Unido</h3>
+                <p>Delegados(as): Arthur Fantini e Gustavo Campara</p>
+            </div>
+            <a href="#" class="btn-view" data-img="DPO_Reino_Unido.png">Ver DPO Reino Unido</a>
+        </div>
+
+        <!-- Delegação 9 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>China</h3>
+                <p>Delegados(as): Matheus Andrade e Nicolas Gomes</p>
+            </div>
+            <a href="#" class="btn-view" data-img="DPO_China.png">Ver DPO China</a>
+        </div>
+
+        <!-- Delegação 10 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>EUA</h3>
+                <p>Delegados(as): Amanda Maffili e João Victor Silva</p>
+            </div>
+            <a href="#" class="btn-view" data-img="DPO_EUA.png">Ver DPO EUA</a>
+        </div>
+
+        <!-- Delegação 11 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>México</h3>
+                <p>Delegados(as): Bárbara Mercês Rocha Viana e Gabrielly Pereira Barroso Vilela</p>
+            </div>
+            <a href="#" class="btn-view" data-img="DPO_Mexico.png">Ver DPO México</a>
+        </div>
+
+        <!-- Delegação 12 -->
+        <div class="delegacao-container">
+            <div class="delegacao-info">
+                <h3>Índia</h3>
+                <p>Delegados(as): Isabella Souza de Oliveira e Maria Eduarda Mota Moreira</p>
+            </div>
+            <a href="#" class="btn-view" data-img="DPO_India.png">Ver DPO Índia</a>
+        </div>
+    </section>
+
+    <!-- Modal for displaying images -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img id="modal-img" src="" alt="DPO Image">
+        </div>
+    </div>
+
+    <footer style="background-color: #2b9bbd; padding: 20px; color: white; text-align: center;">
+        <p>Siga-nos no <a href="https://www.instagram.com" style="color: #fc9403;">Instagram</a></p>
+        <p>MaxOnu 2024 - Feito por Imprensa MaxOnu</p>
+    </footer>
+
+    <script>
+        // Get modal element
+        var modal = document.getElementById('modal');
+        var modalImg = document.getElementById('modal-img');
+        var closeBtn = document.getElementsByClassName('close')[0];
+
+        // Add event listener to each button
+        document.querySelectorAll('.btn-view').forEach(function(btn) {
+            btn.addEventListener('click', function(event) {
+                event.preventDefault();
+                var imgSrc = event.target.getAttribute('data-img');
+                modalImg.src = imgSrc;
+                modal.style.display = 'block';
+            });
+        });
+
+        // Close modal
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+        // Close modal when clicking outside the image
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
