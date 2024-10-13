@@ -7,9 +7,19 @@ body {
     color: #333;
 }
 
+/* Header */
 header {
     background-color: #2b9bbd;
     padding: 10px 0;
+    display: flex;
+    justify-content: space-between; /* Deixa a logo à esquerda e o menu à direita */
+    align-items: center; /* Centraliza a logo verticalmente */
+}
+
+header img {
+    width: 50px; /* Tamanho menor para a logo */
+    height: auto;
+    margin-left: 20px; /* Ajusta a margem esquerda para posicionar a logo */
 }
 
 nav ul {
@@ -17,7 +27,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex; /* Links lado a lado */
-    justify-content: center; /* Centraliza o menu */
+    justify-content: flex-end; /* Mantém o menu no canto direito */
     gap: 15px; /* Espaçamento entre os itens */
 }
 
@@ -205,5 +215,9 @@ footer a:hover {
 
     .info-pais {
         text-align: center;
+    }
+
+    header img {
+        width: 40px; /* Ajusta o tamanho da logo em telas menores */
     }
 }
