@@ -1,23 +1,27 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Smooth scroll para os links de navegação
+    // Smooth scroll para os links de navegação internos
     const navLinks = document.querySelectorAll('nav ul li a');
 
     // Verifique se há links de navegação antes de adicionar event listeners
     if (navLinks.length > 0) {
         navLinks.forEach(link => {
             link.addEventListener('click', function(e) {
-                e.preventDefault();
                 const targetId = e.currentTarget.getAttribute("href");
-                const targetSection = document.querySelector(targetId);
-                
-                // Verifique se o elemento alvo existe antes de tentar rolar a página
-                if (targetSection) {
-                    targetSection.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                } else {
-                    console.error("Seção alvo não encontrada: " + targetId);
+
+                // Verifique se o link é para uma seção interna da página
+                if (targetId.startsWith("#")) {
+                    e.preventDefault();
+                    const targetSection = document.querySelector(targetId);
+
+                    // Verifique se o elemento alvo existe antes de tentar rolar a página
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    } else {
+                        console.error("Seção alvo não encontrada: " + targetId);
+                    }
                 }
             });
         });
