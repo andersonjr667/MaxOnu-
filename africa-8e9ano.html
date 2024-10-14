@@ -7,11 +7,20 @@
     <link rel="stylesheet" href="style.css">
     <style>
         body {
-            background-color: #fc9403; /* Cor de fundo amarela */
+            background-color: #fc9403; /* Cor de fundo laranja */
             color: white; /* Cor da fonte branca */
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+        }
+
+        header {
+            background-color: #2b9bbd; /* Cor do cabeçalho */
+            padding: 20px; /* Espaçamento interno */
+            height: 80px; /* Altura fixa */
+            display: flex; /* Para centralizar o conteúdo */
+            align-items: center; /* Alinhamento vertical */
+            justify-content: center; /* Centralização do conteúdo */
         }
 
         .conteudo-comite {
@@ -20,7 +29,6 @@
             padding: 20px;
             background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            color: white; /* Texto branco */
         }
 
         .conteudo-comite h2 {
@@ -80,7 +88,7 @@
 </head>
 <body>
 
-    <div data-include="header.html"></div>
+    <header data-include="header.html"></header>
 
     <section class="conteudo-comite">
         <h2>Comitê Partilha da África - 8º e 9º Ano</h2>
@@ -221,7 +229,7 @@
         </div>
     </section>
 
-    <div data-include="footer.html"></div>
+    <footer data-include="footer.html"></footer>
 
 </body>
 </html>
