@@ -5,29 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delegações - MaxOnu</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        // Função para carregar arquivos externos no HTML (header e footer)
+        function loadContent(url, elementId) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                })
+                .catch(error => console.error('Erro ao carregar o arquivo:', error));
+        }
+
+        // Carregar o header e o footer quando o DOM estiver pronto
+        document.addEventListener("DOMContentLoaded", function() {
+            loadContent('header.html', 'header-placeholder');
+            loadContent('footer.html', 'footer-placeholder');
+        });
+    </script>
     <style>
         body {
             background-color: #fc9403; /* Cor de fundo amarela */
             color: white; /* Cor da fonte branca */
-        }
-
-        header {
-            background-color: #2b9bbd; /* Exemplo de cor de fundo do cabeçalho */
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 15px;
-        }
-
-        nav ul li a {
-            color: white; /* Cor do texto dos links */
-            text-decoration: none;
         }
 
         .delegacoes-africa, .delegacoes-russia-ucrania, .delegacoes-direitos-humanos {
@@ -49,38 +47,11 @@
         .btn:hover {
             background-color: #1a7c99; /* Cor do botão ao passar o mouse */
         }
-
-        footer {
-            background-color: #2b9bbd;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-
-        footer a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="guias.html">Guias</a></li>
-                <li><a href="delegacoes.html">Delegações</a></li>
-                <li><a href="dpos.html">DPOs</a></li>
-                <li><a href="regras.html">Regras</a></li>
-                <li><a href="perguntas.html">Perguntas Comuns</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Placeholder para o header -->
+    <header id="header-placeholder"></header>
 
     <!-- Delegações - Comitê África -->
     <section class="delegacoes-africa">
@@ -108,11 +79,8 @@
         </div>
     </section>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>Siga-nos no Instagram: <a href="https://www.instagram.com/maxonu_24/profilecard/?igsh=eWFqbDBnOG1xaTRh" target="_blank">MaxOnu 2024</a></p>
-        <p>Feito por Imprensa MaxOnu</p>
-    </footer>
+    <!-- Placeholder para o footer -->
+    <footer id="footer-placeholder"></footer>
 
 </body>
 </html>
