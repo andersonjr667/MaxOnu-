@@ -3,51 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comitê Partilha da África - 8º e 9º Ano</title>
+    <title>Delegações - Partilha da África</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        // Função para carregar arquivos externos no HTML (header e footer)
+        function loadContent(url, elementId) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                })
+                .catch(error => console.error('Erro ao carregar o arquivo:', error));
+        }
+
+        // Carregar o header e o footer quando o DOM estiver pronto
+        document.addEventListener("DOMContentLoaded", function() {
+            loadContent('header.html', 'header-placeholder');
+            loadContent('footer.html', 'footer-placeholder');
+        });
+    </script>
     <style>
         body {
             background-color: #fc9403; /* Cor de fundo laranja */
             color: white; /* Cor da fonte branca */
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
         }
 
-        header {
-            background-color: #2b9bbd; /* Cor do cabeçalho */
-            padding: 20px; /* Espaçamento interno */
-            height: 80px; /* Altura fixa */
-            display: flex; /* Para centralizar o conteúdo */
-            align-items: center; /* Alinhamento vertical */
-            justify-content: center; /* Centralização do conteúdo */
-        }
-
-        .conteudo-comite {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .conteudo-comite h2 {
-            color: white; /* Cor dos títulos */
-            margin-bottom: 30px;
+        .delegacoes-partilha-africa {
+            margin: 20px;
         }
 
         .delegacao-container {
-            display: flex;
-            align-items: center;
             margin-bottom: 20px;
             border-bottom: 1px solid #ddd;
             padding-bottom: 10px;
-        }
-
-        .delegacao-container img {
-            width: 80px;
-            height: auto;
-            margin-right: 20px;
         }
 
         .delegacao-info {
@@ -66,36 +54,18 @@
             font-size: 16px; /* Tamanho do texto */
             color: white; /* Cor do texto */
         }
-
     </style>
-    <script>
-        // Função para incluir o cabeçalho e o rodapé
-        function includeHTML() {
-            var elements = document.querySelectorAll("[data-include]");
-            elements.forEach(function(element) {
-                var file = element.getAttribute("data-include");
-                fetch(file)
-                    .then(response => response.text())
-                    .then(data => {
-                        element.innerHTML = data;
-                    })
-                    .catch(err => console.error('Erro ao carregar o arquivo:', err));
-            });
-        }
-
-        document.addEventListener("DOMContentLoaded", includeHTML);
-    </script>
 </head>
 <body>
+    <!-- Placeholder para o header -->
+    <header id="header-placeholder"></header>
 
-    <header data-include="header.html"></header>
-
-    <section class="conteudo-comite">
-        <h2>Comitê Partilha da África - 8º e 9º Ano</h2>
+    <!-- Delegações - Comitê Partilha da África -->
+    <section class="delegacoes-partilha-africa">
+        <h2>Delegações Comitê (AGNU 2024) 140 ANOS DA PARTILHA DA ÁFRICA: REFLEXÕES E PERSPECTIVAS</h2>
 
         <!-- Delegação 1 -->
         <div class="delegacao-container">
-            <img src="franca.png" alt="Bandeira da França">
             <div class="delegacao-info">
                 <h3>França</h3>
                 <p>Delegados(as): Laura Coelho Morais e Ana Luiza Silva Monteiro</p>
@@ -104,7 +74,6 @@
 
         <!-- Delegação 2 -->
         <div class="delegacao-container">
-            <img src="belgica.png" alt="Bandeira da Bélgica">
             <div class="delegacao-info">
                 <h3>Bélgica</h3>
                 <p>Delegados(as): Olavo Souza e Guilherme Borges</p>
@@ -113,7 +82,6 @@
 
         <!-- Delegação 3 -->
         <div class="delegacao-container">
-            <img src="rdcongo.png" alt="Bandeira da RD Congo">
             <div class="delegacao-info">
                 <h3>RD Congo</h3>
                 <p>Delegados(as): Cauã Reinaldo Honrato Proença e Gustavo Henrique Souza Dos Santos Chagas</p>
@@ -122,7 +90,6 @@
 
         <!-- Delegação 4 -->
         <div class="delegacao-container">
-            <img src="argelia.png" alt="Bandeira da Argélia">
             <div class="delegacao-info">
                 <h3>Argélia</h3>
                 <p>Delegados(as): Luis Felipe Manzini Costa e Luis Fernando Nunes de Paiva</p>
@@ -131,7 +98,6 @@
 
         <!-- Delegação 5 -->
         <div class="delegacao-container">
-            <img src="alemanha.png" alt="Bandeira da Alemanha">
             <div class="delegacao-info">
                 <h3>Alemanha</h3>
                 <p>Delegados(as): Isabelle Cristina de Oliveira Andrade e Julia Rafaela Vieira Mangerotti</p>
@@ -140,7 +106,6 @@
 
         <!-- Delegação 6 -->
         <div class="delegacao-container">
-            <img src="africasul.png" alt="Bandeira da África do Sul">
             <div class="delegacao-info">
                 <h3>África do Sul</h3>
                 <p>Delegados(as): Heitor Andrade de Lima e Vitor Galdino Scalzo</p>
@@ -149,7 +114,6 @@
 
         <!-- Delegação 7 -->
         <div class="delegacao-container">
-            <img src="nigeria.png" alt="Bandeira da Nigéria">
             <div class="delegacao-info">
                 <h3>Nigéria</h3>
                 <p>Delegados(as): Alice Alacoque Fernandes de Jesus e Letícia Gabrielly</p>
@@ -158,7 +122,6 @@
 
         <!-- Delegação 8 -->
         <div class="delegacao-container">
-            <img src="cdh.jpg" alt="Bandeira do CDH">
             <div class="delegacao-info">
                 <h3>CDH</h3>
                 <p>Delegados(as): Anna Carla de Souza Rocha e Sofia Costa Machado</p>
@@ -167,7 +130,6 @@
 
         <!-- Delegação 9 -->
         <div class="delegacao-container">
-            <img src="reinounido.png" alt="Bandeira do Reino Unido">
             <div class="delegacao-info">
                 <h3>Reino Unido</h3>
                 <p>Delegados(as): Letícia de Andrade e Izabela Toscano</p>
@@ -176,7 +138,6 @@
 
         <!-- Delegação 10 -->
         <div class="delegacao-container">
-            <img src="angola.png" alt="Bandeira de Angola">
             <div class="delegacao-info">
                 <h3>Angola</h3>
                 <p>Delegados(as): Manuela Rodrigues Dias e Kamilly Matozinhos Belo</p>
@@ -185,7 +146,6 @@
 
         <!-- Delegação 11 -->
         <div class="delegacao-container">
-            <img src="egito.png" alt="Bandeira do Egito">
             <div class="delegacao-info">
                 <h3>Egito</h3>
                 <p>Delegados(as): Davi Reis Castro e Moisés dos Santos Caldeira Brant</p>
@@ -194,7 +154,6 @@
 
         <!-- Delegação 12 -->
         <div class="delegacao-container">
-            <img src="india.png" alt="Bandeira da Índia">
             <div class="delegacao-info">
                 <h3>Índia</h3>
                 <p>Delegados(as): Anna Luisa Valle Moreira Boechat e Sophia Lara Marinho Miranda</p>
@@ -203,7 +162,6 @@
 
         <!-- Delegação 13 -->
         <div class="delegacao-container">
-            <img src="eua.png" alt="Bandeira dos EUA">
             <div class="delegacao-info">
                 <h3>EUA</h3>
                 <p>Delegados(as): Laura Bernardes França e Letícia dos Santos Trindade Teixeira</p>
@@ -212,7 +170,6 @@
 
         <!-- Delegação 14 -->
         <div class="delegacao-container">
-            <img src="irlanda.png" alt="Bandeira da Irlanda">
             <div class="delegacao-info">
                 <h3>Irlanda</h3>
                 <p>Delegados(as): Eduardo César Martins Siqueira e Henrique Mesquita Borçato</p>
@@ -221,7 +178,6 @@
 
         <!-- Delegação 15 -->
         <div class="delegacao-container">
-            <img src="russia.png" alt="Bandeira da Rússia">
             <div class="delegacao-info">
                 <h3>Rússia</h3>
                 <p>Delegados(as): Guilherme Abreu de Lima e Vitor Lopes Ribas de Souza</p>
@@ -229,7 +185,8 @@
         </div>
     </section>
 
-    <footer data-include="footer.html"></footer>
+    <!-- Placeholder para o footer -->
+    <footer id="footer-placeholder"></footer>
 
 </body>
 </html>
