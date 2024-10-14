@@ -1,15 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Menu responsivo
-    const menuToggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('nav ul');
-
-    // Verifique se os elementos do menu existem antes de adicionar o event listener
-    if (menuToggle && nav) {
-        menuToggle.addEventListener('click', function() {
-            nav.classList.toggle('showing');
-        });
-    }
-
     // Smooth scroll para os links de navegação
     const navLinks = document.querySelectorAll('nav ul li a');
 
@@ -27,23 +16,47 @@ document.addEventListener("DOMContentLoaded", function() {
                         behavior: 'smooth',
                         block: 'start'
                     });
+                } else {
+                    console.error("Seção alvo não encontrada: " + targetId);
                 }
             });
         });
+    } else {
+        console.error("Nenhum link de navegação encontrado.");
     }
 
     // Carregar o cabeçalho e rodapé de arquivos HTML externos
     fetch("header.html")
-        .then(response => response.text())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Erro ao carregar o cabeçalho');
+            }
+            return response.text();
+        })
         .then(data => {
-            document.getElementById("header-placeholder").innerHTML = data;
+            const headerPlaceholder = document.getElementById("header-placeholder");
+            if (headerPlaceholder) {
+                headerPlaceholder.innerHTML = data;
+            } else {
+                console.error("Elemento de cabeçalho não encontrado.");
+            }
         })
         .catch(error => console.error('Erro ao carregar o cabeçalho:', error));
 
     fetch("footer.html")
-        .then(response => response.text())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Erro ao carregar o rodapé');
+            }
+            return response.text();
+        })
         .then(data => {
-            document.getElementById("footer-placeholder").innerHTML = data;
+            const footerPlaceholder = document.getElementById("footer-placeholder");
+            if (footerPlaceholder) {
+                footerPlaceholder.innerHTML = data;
+            } else {
+                console.error("Elemento de rodapé não encontrado.");
+            }
         })
         .catch(error => console.error('Erro ao carregar o rodapé:', error));
 });
