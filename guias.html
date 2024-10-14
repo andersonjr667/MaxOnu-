@@ -5,14 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia de Estudo - MaxOnu</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        // Função para carregar arquivos externos no HTML (header e footer)
+        function loadContent(url, elementId) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                })
+                .catch(error => console.error('Erro ao carregar o arquivo:', error));
+        }
+
+        // Carregar o header e o footer quando o DOM estiver pronto
+        document.addEventListener("DOMContentLoaded", function() {
+            loadContent('header.html', 'header-placeholder');
+            loadContent('footer.html', 'footer-placeholder');
+        });
+    </script>
 </head>
 <body>
 
-    <!-- Inclusão do header -->
-    <header>
-        <!-- Importa o conteúdo do arquivo header.html -->
-        <!-- #include virtual="header.html" -->
-    </header>
+    <!-- Placeholder para o header -->
+    <header id="header-placeholder"></header>
 
     <main>
         <section style="background-color: #fc9403; padding: 20px; color: white; margin: 0;">
@@ -28,11 +42,8 @@
         </section>
     </main>
 
-    <!-- Inclusão do footer -->
-    <footer>
-        <!-- Importa o conteúdo do arquivo footer.html -->
-        <!-- #include virtual="footer.html" -->
-    </footer>
+    <!-- Placeholder para o footer -->
+    <footer id="footer-placeholder"></footer>
 
 </body>
 </html>
