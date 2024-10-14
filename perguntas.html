@@ -5,24 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perguntas Comuns - MaxOnu</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .faq {
+            background-color: #fc9403;
+            padding: 20px;
+            color: white;
+            max-width: 1200px; /* Ajuste o tamanho máximo conforme necessário */
+            margin: auto; /* Centraliza o conteúdo */
+        }
+        footer {
+            background-color: #2b9bbd;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="guias.html">Guias</a></li>
-                <li><a href="delegacoes.html">Delegações</a></li>
-                <li><a href="dpos.html">DPOs</a></li>
-                <li><a href="regras.html">Regras</a></li>
-                <li><a href="perguntas.html">Perguntas Comuns</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header id="header"></header>
 
     <main>
-        <section class="faq" style="background-color: #fc9403; padding: 20px; color: white;">
+        <section class="faq">
             <h1>Perguntas Comuns</h1>
             
             <h2>O que é a MaxOnu?</h2>
@@ -45,11 +52,22 @@
         </section>
     </main>
 
-    <footer style="background-color: #2b9bbd; padding: 20px; color: white; text-align: center;">
-        <div class="social-media">
-            <p>Siga-nos no <a href="https://www.instagram.com/maxonu_24?igsh=eWFqbDBnOG1xaTRh" target="_blank" style="color: #fc9403;">Instagram</a></p>
-        </div>
-        <p>&copy; MaxOnu 2024 - Todos os direitos reservados</p>
-    </footer>
+    <footer id="footer"></footer>
+
+    <script>
+        // Função para carregar o conteúdo de um arquivo HTML
+        function loadHTML(url, elementId) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                })
+                .catch(error => console.error('Erro ao carregar o arquivo:', error));
+        }
+
+        // Carrega o header e o footer
+        loadHTML('header.html', 'header');
+        loadHTML('footer.html', 'footer');
+    </script>
 </body>
 </html>
