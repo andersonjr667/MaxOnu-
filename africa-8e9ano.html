@@ -14,38 +14,6 @@
             padding: 0;
         }
 
-        header {
-            background-color: #2b9bbd; /* Cor de fundo do cabeçalho */
-            padding: 10px 0;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 10px 20px;
-            background-color: transparent;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            background-color: white;
-            color: #fc9403; /* Texto amarelo no hover */
-        }
-
         .conteudo-comite {
             max-width: 1200px;
             margin: 40px auto;
@@ -91,34 +59,11 @@
             color: white; /* Cor do texto */
         }
 
-        footer {
-            background-color: #2b9bbd; /* Cor de fundo do rodapé */
-            color: white; /* Cor da fonte no rodapé */
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
-        }
-
-        footer p {
-            margin: 0;
-            font-size: 14px; /* Tamanho da fonte do rodapé */
-        }
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Página inicial</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="guias.html">Guias</a></li>
-                <li><a href="delegacoes.html">Delegações</a></li>
-                <li><a href="dpos.html">DPOs</a></li>
-                <li><a href="regras.html">Regras</a></li>
-                <li><a href="perguntas.html">Perguntas Comuns</a></li>
-            </ul>
-        </nav>
-    </header>
+
+    <?php include 'header.html'; ?>
 
     <section class="conteudo-comite">
         <h2>Comitê Partilha da África - 8º e 9º Ano</h2>
@@ -259,8 +204,7 @@
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Comitê Partilha da África. Todos os direitos reservados.</p>
-    </footer>
+    <?php include 'footer.html'; ?>
+
 </body>
 </html>
