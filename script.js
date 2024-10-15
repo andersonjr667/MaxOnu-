@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
         console.error("Nenhum link de navegação encontrado.");
     }
 
-    // Carregar o cabeçalho e rodapé de arquivos HTML externos
+    // Carregar o cabeçalho de arquivo externo
     fetch("header.html")
         .then(response => {
             if (!response.ok) {
@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
         })
         .catch(error => console.error('Erro ao carregar o cabeçalho:', error));
 
+    // Carregar o rodapé de arquivo externo
     fetch("footer.html")
         .then(response => {
             if (!response.ok) {
